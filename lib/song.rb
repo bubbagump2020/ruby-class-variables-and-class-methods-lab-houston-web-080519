@@ -33,6 +33,7 @@ class Song
     @@genres.each do |genre|
       genre = @@genres.shift
       @@genres = {genre => @@count}
+      binding.pry
     end
     
     
