@@ -30,11 +30,10 @@ class Song
   end
   
   def self.genre_count
-    @@genres.each do |genre|
-      genre = @@genres.shift
-      @@genre_hash = {genre => @@count}
-      #binding.pry
-    end
+    counter = 0
+    while @@genres.length > counter do
+      genre = @@genres.length
+      
     
     
   end
