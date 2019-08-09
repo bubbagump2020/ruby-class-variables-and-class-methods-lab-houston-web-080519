@@ -32,8 +32,8 @@ class Song
   def self.genre_count
     counter = 0
     while @@genres.length > counter do
-      genre = @@genres.length
-      
+      genre = @@genres.shift
+      if @@genre_hash
     
     
   end
