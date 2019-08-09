@@ -36,6 +36,9 @@ class Song
       if @@genre_hash[genre]
         @@genre_hash += 1
       else
+        @@genre_hash = 1
+      end
+    end
     
     
   end
