@@ -32,7 +32,9 @@ class Song
   def self.genre_count
     @@genres.each do |genre|
       genre = @@genres.shift
-    @@genre_hash = {genre => }
+      @@genres = {genre => genre.count}
+    
+    
   end
   
 end
