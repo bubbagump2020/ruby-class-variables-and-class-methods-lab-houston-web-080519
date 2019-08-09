@@ -33,7 +33,7 @@ class Song
     counter = 0
     while @@genres.length > counter do
       genre = @@genres.shift
-      if @@genre_hash
+      if @@genre_hash[genre]
     
     
   end
