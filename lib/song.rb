@@ -31,7 +31,7 @@ class Song
   
   def self.genre_count
     genre = @@genres.shift
-    @@genre_hash = {genre => @@count}
+    @@genre_hash = {genre => }
   end
   
 end
