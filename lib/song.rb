@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     @@genres.each do |genre|
       genre = @@genres.shift
-      @@genres = {genre => @@count}
+      @@genre_hash = {genre => @@count}
       binding.pry
     end
     
