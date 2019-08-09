@@ -48,9 +48,9 @@ class Song
     while @@artists.length > counter do
       artist = @@artists.shift
       if @@artists_hash[artist]
-        @@artists_hash += 1
+        @@artists_hash[artist] += 1
       else
-        @@artists_hash = 1
+        @@artists_hash[artist] = 1
       end
     end
   end
