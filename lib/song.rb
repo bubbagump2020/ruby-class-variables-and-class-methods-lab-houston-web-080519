@@ -39,6 +39,7 @@ class Song
       else
         @@genre_hash[genre] = 1
       end
+      counter += 1
     end
     return @@genre_hash
   end
@@ -52,6 +53,7 @@ class Song
       else
         @@artists_hash[artist] = 1
       end
+      counter += 1
     end
   end
   
