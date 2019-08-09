@@ -5,6 +5,7 @@ class Song
   @@artists = []
   @@genres = []
   @@genre_hash = {}
+  @@artists_hash = {}
   
   def initialize(name, artist, genre)
     @@count += 1
@@ -43,7 +44,15 @@ class Song
   end
   
   def self.artist_count
-    
+    counter = 0
+    while @@artists.length > counter do
+      artist = @@artists.shift
+      if @@artists_hash[artist]
+        @@artists_hash += 1
+      else
+        @@artists_hash = 1
+      end
+    end
   end
   
 end
