@@ -30,7 +30,8 @@ class Song
   end
   
   def self.genre_count
-    @@genre_hash = {@genre => @@count}
+    genre = @genre
+    @@genre_hash = {:genre => @@count}
   end
   
 end
